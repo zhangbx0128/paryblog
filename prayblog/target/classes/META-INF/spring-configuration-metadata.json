@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "fanli.jwt",
+      "type": "com.baixin.util.JwtUtils",
+      "sourceType": "com.baixin.util.JwtUtils"
+    }
+  ],
+  "properties": [
+    {
+      "name": "fanli.jwt.expire",
+      "type": "java.lang.Long",
+      "sourceType": "com.baixin.util.JwtUtils"
+    },
+    {
+      "name": "fanli.jwt.header",
+      "type": "java.lang.String",
+      "sourceType": "com.baixin.util.JwtUtils"
+    },
+    {
+      "name": "fanli.jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.baixin.util.JwtUtils"
+    }
+  ],
+  "hints": []
+}

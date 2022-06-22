@@ -1,0 +1,48 @@
+# DataSource Config
+server:
+  port: 8082
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    #url: jdbc:p6spy:mysql://localhost:3306/eblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: Zbx1314520!
+  freemarker:
+    settings:
+      classic_compatible: true
+      datetime_format: yyyy-MM-dd HH:mm
+      number_format: 0.##
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 5000
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
+  mail:
+    host:  smtp.163.com
+    username: skymomail@163.com
+    password: 123456
+    default-encoding: UTF-8
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+fanli:
+  jwt:
+    # 部署上线务必修改此配置，以保证token的安全性
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    expire: 172800
+    header: token
+file:
+  upload:
+    dir: ${user.dir}/upload
+im:
+  server:
+    port: 9326
